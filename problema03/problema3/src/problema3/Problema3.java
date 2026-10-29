@@ -20,26 +20,33 @@ public class Problema3 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US); 
         
-        String nombre;
+        String titular;
         String direccion;
         double costoMinuto;
-        double minutos;
-        double gastoTotal;
-        
-        System.out.println("Ingrese un nombre");
-        nombreProyecto1 = entrada.nextLine();
-        System.out.println("Ingrese gasto mensual");
-        gasto1 = entrada.nextDouble();
+        int minutos;
+        double valorTotal;
+
+        System.out.println("Ingrese nombre del titular");
+        titular = entrada.nextLine();
+        System.out.println("Ingrese direccion");
+        direccion = entrada.nextLine();
+        System.out.println("Ingrese costo por minuto");
+        costoMinuto = entrada.nextDouble();
         entrada.nextLine();
-        System.out.println("Ingrese nombre del Proyecto 2");
-        nombreProyecto2 = entrada.nextLine(); 
-        System.out.println("Ingrese gasto mensual");
-        gasto2 = entrada.nextDouble();
-        entrada.nextLine();
-        System.out.println("Ingrese nombre del Proyecto 3");
-        nombreProyecto3 = entrada.nextLine(); 
-        System.out.println("Ingrese gasto mensual");
-        gasto3 = entrada.nextDouble();
+        System.out.println("Ingrese minutos consumidos");
+        minutos = entrada.nextInt();
+
+        valorTotal = costoMinuto * minutos;
+
+        System.out.printf("=========================\nPLANILLA DE SERVICIO TELEFÓNICO\n==========================\n"
+            + "Titular: %s\nDirección: %s\n-------------------------------------\n"
+            + "Costo por minuto: $%.2f\nMinutos consumidos: %d\n-------------------------------------\n"
+            + "VALOR TOTAL A PAGAR:  $%.2f\n===================================\n",
+            titular,
+            direccion,
+            costoMinuto,
+            minutos,
+            valorTotal);
         
     }
     

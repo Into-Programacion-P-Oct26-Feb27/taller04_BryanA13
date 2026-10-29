@@ -47,7 +47,8 @@ public class Problema1 {
         gastoMensual = gasto1 + gasto2 + gasto3; 
         
         System.out.printf("CONTROL DE GASTOS DE PROYECTOS\nProyectos\n-------------\n"
-                + "1. %s: $%.2f\n2. %s: $%.2f\n3. %s: $%.2f\n---------\nGASTO MENSUAL TOTAL $%.2f\n ",
+                + "1. %s: $%.2f\n2. %s: $%.2f\n3. %s: $%.2f\n---------\nGASTO "
+                + "MENSUAL TOTAL $%.2f\n ",
                 nombreProyecto1,
                 gasto1,
                 nombreProyecto2,
